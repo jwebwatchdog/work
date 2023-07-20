@@ -1,0 +1,22 @@
+name: On Push Run
+
+on: push
+
+env:
+  DEVOPS_DIR: work
+
+jobs:
+  hello-world:
+    name: Hello world
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check-out work repository
+      uses: actions/checkout@v2
+      with:
+        repository: jwebwatchdog/work
+        token: ${{ secrets.GITHUB_TOKEN }}
+        path: ${{ env.DEVOPS_DIR }}
+
+    - name: Hello World
+      run: python ${{ env.DEVOPS_DIR }}/hello_world.py
+      shell: sh
