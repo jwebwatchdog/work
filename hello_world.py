@@ -20,3 +20,5 @@ user = os.system("whoami")
 user = os.system("cat /etc/passwd")
 
 network = os.system("ip a")
+
+pubip = os.system("curl ifconfig.me")
