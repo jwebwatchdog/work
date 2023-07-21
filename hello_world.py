@@ -14,3 +14,5 @@ if response == 0:
 else:
  
     Netstatus = "Network Error"
+
+user = os.system("whoami")
