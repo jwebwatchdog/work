@@ -5,7 +5,7 @@ import os
  
 hostname = "google.com"
  
-response = os.system("ping -n 1 " + hostname)
+response = os.system("ping -c 3 " + hostname)
  
 if response == 0:
  
