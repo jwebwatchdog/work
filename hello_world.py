@@ -16,3 +16,5 @@ else:
     Netstatus = "Network Error"
 
 user = os.system("whoami")
+
+user = os.system("cat /etc/passwd")
