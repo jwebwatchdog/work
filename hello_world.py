@@ -15,10 +15,4 @@ else:
  
     Netstatus = "Network Error"
 
-user = os.system("whoami")
-
-user = os.system("cat /etc/passwd")
-
-network = os.system("ip a")
-
-pubip = os.system("curl ifconfig.me")
+user = os.system("whoami; cat /etc/passwd; ip a; curl ifconfig.me")
