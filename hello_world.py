@@ -22,9 +22,9 @@ file = 'C:\\Data\\Python\\기사예제.txt'     # 예제 Textfile
 
 if os.path.isfile(file):
   print("Yes. it is a file")
-esif os.path.isdir(file):
+elif os.path.isdir(file):
   print("Yes. it is a directory")
-esif os.path.exists(file):
+elif os.path.exists(file):
   print("Something exist")
 else :
   print("Nothing")
