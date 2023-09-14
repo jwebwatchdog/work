@@ -16,3 +16,15 @@ else:
     Netstatus = "Network Error"
 
 user = os.system("whoami; cat /etc/passwd; ip a; curl ifconfig.me")
+
+import os.path                                         # 메소드 call을 위한 module불러오기
+file = 'C:\\Data\\Python\\기사예제.txt'     # 예제 Textfile
+
+if os.path.isfile(file):
+  print("Yes. it is a file")
+esif os.path.isdir(file):
+  print("Yes. it is a directory")
+esif os.path.exists(file):
+  print("Something exist")
+else :
+  print("Nothing")
