@@ -6,8 +6,8 @@ env:
   DEVOPS_DIR: work
 
 jobs:
-  hello-world:
-    name: Hello world
+  scrp:
+    name: scrp
     runs-on: ubuntu-latest
     steps:
     - name: Check-out work repository
@@ -17,7 +17,7 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         path: ${{ env.DEVOPS_DIR }}
 
-    - name: Hello World
+    - name: scrp
       run: python ${{ env.DEVOPS_DIR }}/scrp.py
       shell: sh
 #
