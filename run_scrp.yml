@@ -1,4 +1,4 @@
-name: On Push Run2
+name: Scrpy Run
 
 on: push
 
